@@ -28,3 +28,6 @@ app.post('/recommend-outfit', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+// Serve static files from the 'public' directory
+app.use(express.static('public'));
